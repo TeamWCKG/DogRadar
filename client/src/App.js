@@ -10,7 +10,8 @@ function App() {
   axios
   .get("http://localhost:5000/dogradar")
   .then( res=>{
-    console.log("res", res)
+    setDogs(res.data.dogs)
+    console.log("res from dogs data: ", res.data.dogs)
   }
     
   )
