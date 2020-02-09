@@ -10,7 +10,7 @@ function App() {
   axios
   .get("http://localhost:5000/dogadar")
   .then( res=>{
-    console.log("res", res);
+    console.log("response", res.data.dogs)
   })  
   .catch(error => console.log("Did not get API", error));
 
