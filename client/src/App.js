@@ -8,12 +8,12 @@ function App() {
   const [dogs, setDogs]=useState({})
 
   axios
-  .get("http://localhost:5000/dogradar")
+  .get("http://localhost:5000/dogadar")
   .then( res=>{
     console.log("response", res.data.dogs)
-  }
-    
-  )
+  })  
+  .catch(error => console.log("Did not get API", error));
+
 
   return (
     <DogContext.Provider value={dogs}>
