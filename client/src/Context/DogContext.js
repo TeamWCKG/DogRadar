@@ -1,3 +1,5 @@
 import {createContext} from "react";
 
-export const DogContext=createContext()
+const DogContext=createContext()
+
+export default DogContext;
