@@ -1,17 +1,13 @@
 import React, { useContext } from "react";
-import DogContext  from "../Context/DogContext";
+import DogContext from "../Context/DogContext";
 import Dogs from "../components/Dogs";
 
 const DogsList = () => {
-  const dogs = useContext(DogContext);
-  console.log('gg: dogs in DogList: ', dogs);
+  const { dogs } = useContext(DogContext);
+  console.log("gg: dogs in DogList: ", dogs);
 
   return (
-    <div>
-      {dogs.map(dogs => {
-        return <Dogs key={dogs.id} dog={dogs}/>
-    })}
-    </div>
+    <div>{dogs && dogs.map(dogs => <Dogs key={dogs.name} dogs={dogs} />)}</div>
   );
 };
 
