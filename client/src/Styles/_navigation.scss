@@ -1,0 +1,17 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4532;
+  img {
+    margin: 10px 0 10px 5px;
+  }
+  .nav-links {
+    margin-right: 1rem;
+    .nav-inner-links {
+        margin-right: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+  }
+}
