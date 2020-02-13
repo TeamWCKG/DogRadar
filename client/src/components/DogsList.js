@@ -7,7 +7,7 @@ const DogsList = () => {
   console.log("gg: dogs in DogList: ", dogs);
 
   return (
-    <div>{dogs && dogs.map(dogs => <Dogs key={dogs.name} dogs={dogs} />)}</div>
+    <>{dogs && dogs.map(dogs => <Dogs key={dogs.name} dogs={dogs} />)}</>
   );
 };
 

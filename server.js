@@ -16,17 +16,17 @@ let dogs = [
     image:
       "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     name: "Max"
-  },
-  {
-    id: 1,
-    image:
-      "https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    name: "Ruffle"
-  },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    name: "Flash"
   }
+  // {
+  //   id: 1,
+  //   image:
+  //     "https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  //   name: "Ruffle"
+  // },
+  // {
+  //   id: 2,
+  //   image:
+  //     "https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  //   name: "Flash"
+  // }
 ];

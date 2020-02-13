@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./Styles/styles.scss";
 import DogContext from "../src/Context/DogContext";
 import axios from "axios";
-import Dogs from "./components/DogsList";
-import NewDog from "./components/NewDog";
+// import NewDog from "./components/NewDog";
+import Navigation from "./components/Navigation";
+import HomePageBody from "./components/HomePageBody";
 
 function App() {
   const [dogs, setDogs] = useState();
@@ -22,14 +23,10 @@ function App() {
   return (
     <DogContext.Provider value={{ dogs, setDogs }}>
       <div className="App">
-        <h1> DOG RADAR</h1>
+        <Navigation />
+        {/* <NewDog /> */}
+        <HomePageBody />
       </div>
-      <center>
-        <NewDog />
-      </center>
-      <center>
-        <Dogs />
-      </center>
     </DogContext.Provider>
   );
 }
